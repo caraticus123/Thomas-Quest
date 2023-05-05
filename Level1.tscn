@@ -1,0 +1,173 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://City scape.jpg" type="Texture" id=1]
+[ext_resource path="res://CityAudio.tscn" type="PackedScene" id=2]
+[ext_resource path="res://base.tscn" type="PackedScene" id=3]
+[ext_resource path="res://player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://AI1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sky.tscn" type="PackedScene" id=6]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CityScape" type="Sprite" parent="."]
+position = Vector2( 6.10352e-05, 3.05176e-05 )
+scale = Vector2( 1.761, 1.667 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="platformroad" parent="CityScape" instance=ExtResource( 3 )]
+position = Vector2( 27, 374.4 )
+
+[node name="platformroad25" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( -58.5, 0 )
+
+[node name="platformroad30" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 639, -230.4 )
+
+[node name="platformroad31" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 639, -288 )
+
+[node name="platformroad32" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 639.087, -345.598 )
+rotation = -0.024215
+
+[node name="platformroad11" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 585, 0 )
+
+[node name="platformroad6" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 526.5, 0 )
+
+[node name="platformroad7" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 468, 0 )
+
+[node name="platformroad8" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 409.5, 0 )
+
+[node name="platformroad9" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 351, 0 )
+
+[node name="platformroad2" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 292.5, 0 )
+
+[node name="platformroad3" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 234, 0 )
+
+[node name="platformroad4" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 175.5, 0 )
+
+[node name="platformroad5" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 117, 0 )
+
+[node name="platformroad29" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 639, -172.8 )
+
+[node name="platformroad26" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 639, -115.2 )
+
+[node name="platformroad27" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 639, -57.6 )
+
+[node name="platformroad28" parent="CityScape/platformroad/platformroad25" instance=ExtResource( 3 )]
+position = Vector2( 639, 0 )
+
+[node name="platformroad10" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( 522, -115.2 )
+
+[node name="platformroad12" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( 463.5, -115.2 )
+
+[node name="platformroad13" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( 328.5, -192 )
+
+[node name="platformroad14" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( 270, -192 )
+
+[node name="platformroad15" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( 211.5, -192 )
+
+[node name="platformroad16" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( 99, -273.6 )
+
+[node name="platformroad17" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( 40.5, -273.6 )
+
+[node name="platformroad18" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( -18, -273.6 )
+
+[node name="platformroad19" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( -58.5, -345.6 )
+
+[node name="platformroad20" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( -58.5, -288 )
+
+[node name="platformroad21" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( -58.5, -230.4 )
+
+[node name="platformroad22" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( -58.5, -172.8 )
+
+[node name="platformroad23" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( -58.5, -115.2 )
+
+[node name="platformroad24" parent="CityScape/platformroad" instance=ExtResource( 3 )]
+position = Vector2( -58.5, -57.6 )
+
+[node name="player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 136, 560 )
+
+[node name="AudioStreamPlayer2D" parent="." instance=ExtResource( 2 )]
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 64, 120 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 6 )]
+
+[node name="StaticBody2D2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 64, 0 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 128, 0 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 192, 0 )
+
+[node name="StaticBody2D5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 256, 0 )
+
+[node name="StaticBody2D6" parent="." instance=ExtResource( 6 )]
+position = Vector2( 320, 0 )
+
+[node name="StaticBody2D7" parent="." instance=ExtResource( 6 )]
+position = Vector2( 384, 0 )
+
+[node name="StaticBody2D8" parent="." instance=ExtResource( 6 )]
+position = Vector2( 448, 0 )
+
+[node name="StaticBody2D9" parent="." instance=ExtResource( 6 )]
+position = Vector2( 512, 0 )
+
+[node name="StaticBody2D10" parent="." instance=ExtResource( 6 )]
+position = Vector2( 576, 0 )
+
+[node name="StaticBody2D11" parent="." instance=ExtResource( 6 )]
+position = Vector2( 640, 0 )
+
+[node name="StaticBody2D12" parent="." instance=ExtResource( 6 )]
+position = Vector2( 704, 0 )
+
+[node name="StaticBody2D13" parent="." instance=ExtResource( 6 )]
+position = Vector2( 768, 0 )
+
+[node name="StaticBody2D14" parent="." instance=ExtResource( 6 )]
+position = Vector2( 832, 0 )
+
+[node name="StaticBody2D15" parent="." instance=ExtResource( 6 )]
+position = Vector2( 896, 0 )
+
+[node name="StaticBody2D16" parent="." instance=ExtResource( 6 )]
+position = Vector2( 952, 0 )
